@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="plugin" group="system" method="upgrade">
+	<name>plg_system_aftercoreupdatenotification</name>
+	<author>Tobias Zulauf</author>
+	<creationDate>2024-12-17</creationDate>
+	<copyright>Copyright (C) 2024 Tobias Zulauf (jah-tz.de). All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>kontakt@jah-tz.de</authorEmail>
+	<authorUrl>www.jah-tz.de</authorUrl>
+	<version>1.0.0</version>
+	<description>PLG_SYSTEM_AFTERCOREUPDATENOTIFICATION_XML_DESCRIPTION</description>
+	<namespace path="src">Joomla\Plugin\System\AfterCoreUpdateNotification</namespace>
+	<files>
+		<folder>language</folder>
+		<folder plugin="aftercoreupdatenotification">services</folder>
+		<folder>sql</folder>
+		<folder>src</folder>
+	</files>
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/mysql/install.sql</file>
+			<file driver="postgresql" charset="utf8">sql/postgresql/install.sql</file>
+			<file driver="pgsql" charset="utf8">sql/postgresql/install.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/mysql/uninstall.sql</file>
+			<file driver="postgresql" charset="utf8">sql/postgresql/uninstall.sql</file>
+			<file driver="pgsql" charset="utf8">sql/postgresql/uninstall.sql</file>
+		</sql>
+	</uninstall>
+	<update>
+		<schemas>
+			<schemapath type="mysql">sql/mysql/updates</schemapath>
+			<schemapath type="postgresql">sql/postgresql/updates</schemapath>
+			<schemapath type="pgsql">sql/postgresql/updates</schemapath>
+		</schemas>
+	</update>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="email"
+					type="text"
+					label="PLG_SYSTEM_AFTERCOREUPDATENOTIFICATION_EMAIL_LBL"
+					description="PLG_SYSTEM_AFTERCOREUPDATENOTIFICATION_EMAIL_DESC"
+					default=""
+				/>
+				<field
+					name="language_override"
+					type="language"
+					label="PLG_SYSTEM_AFTERCOREUPDATENOTIFICATION_LANGUAGE_OVERRIDE_LBL"
+					description="PLG_SYSTEM_AFTERCOREUPDATENOTIFICATION_LANGUAGE_OVERRIDE_DESC"
+					default=""
+					client="administrator"
+				>
+					<option value="">PLG_SYSTEM_AFTERCOREUPDATENOTIFICATION_LANGUAGE_OVERRIDE_NONE</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+	<updateservers>
+		<server type="extension" name="AfterCoreUpdateNotification Update Site">https://raw.githubusercontent.com/zero-24/plg_system_aftercoreupdatenotification/master/update.xml</server>
+	</updateservers>
+</extension>

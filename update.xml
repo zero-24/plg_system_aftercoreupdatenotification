@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<updates>
+	<update>
+		<name>AfterCoreUpdateNotification 1.0.1</name>
+		<description>AfterCoreUpdateNotification Plugin</description>
+		<element>aftercoreupdatenotification</element>
+		<type>plugin</type>
+		<folder>task</folder>
+		<client>site</client>
+		<version>1.0.0</version>
+		<infourl title="AfterCoreUpdateNotification Plugin">https://github.com/zero-24/plg_system_aftercoreupdatenotification</infourl>
+		<downloads>
+			<downloadurl type="full" format="zip">https://github.com/zero-24/plg_system_aftercoreupdatenotification/releases/download/1.0.0/plg_system_aftercoreupdatenotification.zip</downloadurl>
+		</downloads>
+		<sha512>792be67faa809cd05129920f5726a63c0fd15568f307bb29c76fb7f7fa83fc8e91933cfd32c53f7c00d5cc53841f6a72dd15fc19e55e50a9cc7495ad356da400</sha512>
+		<tags>
+			<tag>stable</tag>
+		</tags>
+		<maintainer>Tobias Zulauf</maintainer>
+		<maintainerurl>https://www.jah-tz.de</maintainerurl>
+		<php_minimum>8.1.0</php_minimum>
+		<targetplatform name="joomla" version="5.2"/>
+	</update>
+</updates>
