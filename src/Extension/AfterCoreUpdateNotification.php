@@ -16,7 +16,7 @@ use Joomla\CMS\Language\Text;
 use Joomla\CMS\Mail\Exception\MailDisabledException;
 use Joomla\CMS\Mail\MailTemplate;
 use Joomla\CMS\Plugin\CMSPlugin;
-use Joomla\CMS\Table\Table;
+use Joomla\CMS\Table\Asset;
 use Joomla\CMS\Uri\Uri;
 use Joomla\CMS\Version;
 use Joomla\Database\DatabaseAwareTrait;
@@ -183,7 +183,8 @@ final class AfterCoreUpdateNotification extends CMSPlugin implements SubscriberI
         $ret = [];
 
         try {
-            $rootId    = Table::getInstance('Asset')->getRootId();
+            $table     = new Asset($db);
+            $rootId    = $table->getRootId();
             $rules     = Access::getAssetRules($rootId)->getData();
             $rawGroups = $rules['core.admin']->getData();
             $groups    = [];
