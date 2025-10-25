@@ -7,18 +7,39 @@
 		<type>plugin</type>
 		<folder>task</folder>
 		<client>site</client>
-		<version>1.0.0</version>
+		<version>1.0.1</version>
 		<infourl title="AfterCoreUpdateNotification Plugin">https://github.com/zero-24/plg_system_aftercoreupdatenotification</infourl>
 		<downloads>
-			<downloadurl type="full" format="zip">https://github.com/zero-24/plg_system_aftercoreupdatenotification/releases/download/1.0.0/plg_system_aftercoreupdatenotification.zip</downloadurl>
+			<downloadurl type="full" format="zip">https://github.com/zero-24/plg_system_aftercoreupdatenotification/releases/download/1.0.1/plg_system_aftercoreupdatenotification.zip</downloadurl>
 		</downloads>
-		<sha512>792be67faa809cd05129920f5726a63c0fd15568f307bb29c76fb7f7fa83fc8e91933cfd32c53f7c00d5cc53841f6a72dd15fc19e55e50a9cc7495ad356da400</sha512>
+		<sha512>a1f82fc9537b3b7a871dd9c1f165e6f1e9373d02bdd43cd32de6743ce95a3e4a55a9ed927026e7822001c87ff167a0233fb4f1df66ce1ddcbef9d96777845e49</sha512>
 		<tags>
 			<tag>stable</tag>
 		</tags>
 		<maintainer>Tobias Zulauf</maintainer>
 		<maintainerurl>https://www.jah-tz.de</maintainerurl>
 		<php_minimum>8.1.0</php_minimum>
-		<targetplatform name="joomla" version="5.[23]"/>
+		<targetplatform name="joomla" version="5.[234]"/>
+	</update>
+	<update>
+		<name>AfterCoreUpdateNotification 1.0.1</name>
+		<description>AfterCoreUpdateNotification Plugin</description>
+		<element>aftercoreupdatenotification</element>
+		<type>plugin</type>
+		<folder>task</folder>
+		<client>site</client>
+		<version>1.0.1</version>
+		<infourl title="AfterCoreUpdateNotification Plugin">https://github.com/zero-24/plg_system_aftercoreupdatenotification</infourl>
+		<downloads>
+			<downloadurl type="full" format="zip">https://github.com/zero-24/plg_system_aftercoreupdatenotification/releases/download/1.0.1/plg_system_aftercoreupdatenotification.zip</downloadurl>
+		</downloads>
+		<sha512>a1f82fc9537b3b7a871dd9c1f165e6f1e9373d02bdd43cd32de6743ce95a3e4a55a9ed927026e7822001c87ff167a0233fb4f1df66ce1ddcbef9d96777845e49</sha512>
+		<tags>
+			<tag>stable</tag>
+		</tags>
+		<maintainer>Tobias Zulauf</maintainer>
+		<maintainerurl>https://www.jah-tz.de</maintainerurl>
+		<php_minimum>8.1.0</php_minimum>
+		<targetplatform name="joomla" version="6.0"/>
 	</update>
 </updates>
