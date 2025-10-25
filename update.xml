@@ -5,7 +5,7 @@
 		<description>AfterCoreUpdateNotification Plugin</description>
 		<element>aftercoreupdatenotification</element>
 		<type>plugin</type>
-		<folder>task</folder>
+		<folder>system</folder>
 		<client>site</client>
 		<version>1.0.1</version>
 		<infourl title="AfterCoreUpdateNotification Plugin">https://github.com/zero-24/plg_system_aftercoreupdatenotification</infourl>
@@ -26,7 +26,7 @@
 		<description>AfterCoreUpdateNotification Plugin</description>
 		<element>aftercoreupdatenotification</element>
 		<type>plugin</type>
-		<folder>task</folder>
+		<folder>system</folder>
 		<client>site</client>
 		<version>1.0.1</version>
 		<infourl title="AfterCoreUpdateNotification Plugin">https://github.com/zero-24/plg_system_aftercoreupdatenotification</infourl>
